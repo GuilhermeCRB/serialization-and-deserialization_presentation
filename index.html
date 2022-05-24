@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/reset.css" rel="stylesheet" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Serialização e JSON</title>
+</head>
+<body>
+    <h1>Serialização e Desserialização de objetos JS</h1>
+    <div>
+        <h2>Objeto JS:</h2>
+        <div class="object_js"></div>
+    </div>
+    <div class="buttons">
+        <p>XML</p>
+        <div>
+            <button onclick="serializeXML()">Serializar</button>
+            <button onclick="deserializeXML()">Desserializar</button>
+        </div>
+    </div>
+    <div class="buttons">
+        <p>JSON</p>
+        <div>
+            <button onclick="serializeJSON()">Serializar</button>
+            <button onclick="deserializeJSON()">Desserializar</button>
+        </div>
+    </div>
+    <div class="buttons">
+        <p>YAML</p>
+        <div>
+            <button onclick="serializeYAML()">Serializar</button>
+            <button onclick="deserializeYAML()">Desserializar</button>
+        </div>
+    </div>
+    <div>
+        <h2>Resultado:</h2>
+        <div class="result"><p></p></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>
